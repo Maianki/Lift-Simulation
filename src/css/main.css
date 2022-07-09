@@ -206,3 +206,25 @@ body {
     height: 4rem;
     transition: al 2s ease-in;
 }
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: var(--PRIMARY-COLOR);
+}
+
+.footer a {
+    text-decoration: none;
+    padding-left: 1rem;
+    color: var(--COLOR-WHITE);
+}
+
+.footer a:hover {
+    color: var(--ERROR-COLOR);
+}
+
+.footer>img {
+    width: 28px;
+    height: 28px;
+}
