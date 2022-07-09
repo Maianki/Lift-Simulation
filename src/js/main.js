@@ -48,10 +48,15 @@ function generateFloors() {
   const floors = document.createElement("section");
   floors.classList.add("floors");
   insertAfter(inputContainer, floors);
+
   for (let i = 0; i < noOfFloors; i++) {
     const floor = document.createElement("div");
     floor.setAttribute("class", "floor");
     floors.prepend(floor);
+    const floorNumber = document.createElement("div");
+    floorNumber.innerText = `Floor ${i + 1}`;
+    floorNumber.setAttribute("class", "floor-number");
+    floor.append(floorNumber);
     const liftController = generateLiftControllers(i);
     floor.append(liftController);
 

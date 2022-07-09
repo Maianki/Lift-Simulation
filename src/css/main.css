@@ -150,6 +150,10 @@ body {
     padding: 1rem 2rem .6rem;
 }
 
+.floor-number {
+    font-weight: 500;
+    padding-right: 1rem;
+}
 .lift-controller {
     display: flex;
     flex-direction: column;
